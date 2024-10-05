@@ -34,9 +34,6 @@ jobs:
               Get-SmbServerConfiguration
             }
 
-    - name: Get dependencies
-      run: go get -v -t -d ./...
-
     - name: Vet
       run: go vet ./...
 
